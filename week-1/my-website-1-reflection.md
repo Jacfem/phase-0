@@ -1,0 +1,24 @@
+Hi! Great, so you want to learn how to create a repository on GitHub & clone it to your own computer! That’s a great idea if you want to collaborate on projects with other people. First things first, set up a GitHub account & then follow the instructions on GitHub’s website to install Git. These two tools will work in conjunction throughout your project lifecycle. 
+
+Repositories are basically official places on GitHub for your projects to live, sort of like a Folder on your desktop for ‘Important Documents’ perhaps. You’ll want to create a new one each time you’re working on a new project. For instance, I don’t keep my pictures and my music in the same folder on my desktop, I like to keep it organized so that depending on if I want to listen to music or edit pictures, I know I have to go to a different ‘Folder.’ Creating a new repository on GitHub is really easy: On the upper right hand side of your GitHub screen (it shouldn’t matter what page within GitHub you’re on), click the + sign, and then click ‘New Repository.’ That will bring you to a new page, where you need to give this Repository a short name, perhaps ‘My First Repository.’ Adding a description of this Repository is optional, so add more context in there if you’d like. Click ‘Public’ for the choice between Public or Private – Private repositories are only available for paid accounts, so you can get there in the future! Public repositories are visible to any other GitHub user, so you’ll really reap the benefits of this community by allowing it to be public. Select ‘Initialize this repository with a README,’ and then click ‘Create Repository.’ 
+
+Next we’ll incorporate that other thing you installed, Git! Git is a system that aids project management and synchronizes with GitHub. Open your command line and navigate to the folder you’d like to store your local copy of your repository in (so that you can work on it & upload changes to GitHub). You can do this with the command ‘cd’ and then the name of the folder you’ll want this in, for example ‘cd DBC Work.’ Next, go back to your Repo on GitHub, and find the ‘HTTPS’ box, and copy that link. Go back to your terminal, and type in ‘git clone URL,’ URL being the copied link you just took from GitHub. Now you’ve cloned it to your computer! To double check that this worked, use the command ‘ls’ which will list the contents of the folder you’re in. You should now see a directory inside that list with the name of your cloned Repository.
+
+
+
+
+•	Describe what open source means.
+Open source is a practice that makes the code that goes into computer programs visible & available for anyone to see. The ‘source code’ is any code that’s gone into the making of a program, resulting in a final product that we can use. These products all had to give directions to the computer for it to be readable & function properly. The problem with non-open source software is, if something does NOT function properly, no one except the creators of the software can go back in and try to figure out the issue. Open source, as I said, makes the raw code visible to the community, allowing anyone who’s interested to workshop & edit the code and solve the bug. 
+
+•	What do you think about Open Source? Does it make you nervous or protective? Does it feel like utopia?
+I think Open source sounds great. Personally, it does not make me nervous. It seems like through using Git & GitHub, there are ways to protect your own work. It does not feel like utopia, but definitely encourages collaboration & visibility, which I think is great to have in an industry. It seems that some issues in other industries such as politics, change is hard to accomplish, partly because it all needs to be in writing – open source encourages adaptability & evolution to suit what’s needed as the world changes.
+
+•	Assess the importance of using licenses.
+Using licenses is important because if someone decides to alter the code of an open-source program, they must in return allow their own work to be open-source.
+
+•	What concepts were solidified in the challenge? Did you have any "aha" moments? What did you struggle with?
+This challenge helped pull all of this week’s concepts together to finally visualize what it will look like to go from GitHub, to my text editor, and back up to GtHub with a changed project. I’m still struggling with the exact order in which to do things, but am finding that practice is helping.
+
+•	Did you find any resources on your own that helped you better understand a topic? If so, please list it.
+Yes – Video tutorials are helping me. This video on Git helped me visualize the usefulness of it for teams: https://www.youtube.com/watch?v=OqmSzXDrJBk
+

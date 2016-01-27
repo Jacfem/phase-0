@@ -31,7 +31,7 @@ User experience is a fairly new and quickly developing field which focuses on ho
 I didn't find anything about this challenge tedious, but can imagine that the Maintenance phase of web design might be more tedious than other phases.
 
 
-![Site Map](Users/jaclynfeminella/DBC Work/phase-0/week two/imgs/site-map.JPG)
+![Site Map](https://github.com/Jacfem/phase-0/blob/master/week%20two/imgs/site-map.jpg)
 
 
 

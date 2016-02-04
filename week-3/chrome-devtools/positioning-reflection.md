@@ -1,13 +1,13 @@
 
 ![Imgs](https://github.com/Jacfem/phase-0/blob/master/week-3/chrome-devtools/imgs/1change_color.png)
-<img src="imgs/2columns.PNG">
-<img src="imgs/3row.PNG" alt="Row">
-<img src="imgs/4make-equidistant.PNG" alt="Make Equidistant">
-<img src="imgs/5squares.PNG" alt="Squares">
-<img src="imgs/6footer.PNG" alt="Footer">
-<img src="imgs/7header.PNG" alt="Header">
-<img src="imgs/8sidebar.PNG" alt="Sidebar">
-<img src="imgs/9get-creative.PNG" alt="Get Creative">
+![Imgs](https://github.com/Jacfem/phase-0/blob/master/week-3/chrome-devtools/imgs/2columns.png)
+![Imgs](https://github.com/Jacfem/phase-0/blob/master/week-3/chrome-devtools/imgs/3row.png)
+![Imgs](https://github.com/Jacfem/phase-0/blob/master/week-3/chrome-devtools/imgs/4make-equidistant.png)
+![Imgs](https://github.com/Jacfem/phase-0/blob/master/week-3/chrome-devtools/imgs/5squares.png)
+![Imgs](https://github.com/Jacfem/phase-0/blob/master/week-3/chrome-devtools/imgs/6footer.png)
+![Imgs](https://github.com/Jacfem/phase-0/blob/master/week-3/chrome-devtools/imgs/7header.png)
+![Imgs](https://github.com/Jacfem/phase-0/blob/master/week-3/chrome-devtools/imgs/8sidebar.png)
+![Imgs](https://github.com/Jacfem/phase-0/blob/master/week-3/chrome-devtools/imgs/9get-creative.png)
 
 How can you use Chrome's DevTools inspector to help you format or position elements?
 It's a lot easier to format and position elements in real-time using Chrome's DevTools than I realized. It's a great way to adjust styles, sizes, colors, and positioning in a much more visual way than just using your text editor & refreshing a web page would allow. On any web page in Chrome, click 'View' on the top of your page, hover over 'Developer' and click 'Developer Tools.' Now, you can open up any element & its CSS to live-edit any of its properties, as well as add or take away any that you'd like to see make changes to the page.

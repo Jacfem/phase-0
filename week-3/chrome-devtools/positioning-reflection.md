@@ -1,5 +1,6 @@
-![Imgs](imgs/1change_color.PNG)
-<img src="imgs/2columns.PNG" alt="Two Columns">
+
+![Imgs](https://github.com/Jacfem/phase-0/blob/master/week-3/chrome-devtools/imgs/1change_color.png)
+<img src="imgs/2columns.PNG">
 <img src="imgs/3row.PNG" alt="Row">
 <img src="imgs/4make-equidistant.PNG" alt="Make Equidistant">
 <img src="imgs/5squares.PNG" alt="Squares">

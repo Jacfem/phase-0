@@ -1,4 +1,4 @@
-<img src="1change_color.PNG" alt="Change Color">
+![Imgs](imgs/1change_color.PNG)
 <img src="imgs/2columns.PNG" alt="Two Columns">
 <img src="imgs/3row.PNG" alt="Row">
 <img src="imgs/4make-equidistant.PNG" alt="Make Equidistant">

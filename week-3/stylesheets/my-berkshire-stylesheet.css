@@ -1,0 +1,133 @@
+.text{
+  color: #000080;
+}
+
+a{
+  color: #800080;
+}
+
+a:visited{
+  color:#ff0000;
+}
+
+body{
+  color:ffffff;
+}
+
+.text {
+  border-bottom: 1px solid black;
+}
+
+.column1{
+  float: left;
+  width: 500px;
+  padding: 0px 0px 0px 90px;
+}
+
+.column2{
+  float: right;
+  width: 500px;
+  padding: 0px 20px 0px 0px;
+}
+
+#geicoimg{
+  float: bottom;
+  clear: both;
+  text-align: center;
+  top: -200px;
+  right: 500px;
+  position: relative;
+}
+
+.footer-copyright{
+  font-size: .6em;
+  float: bottom;
+  clear: both;
+  text-align: left;
+}
+
+.footer-geico{
+  float: bottom;
+  clear: both;
+  text-align: center;
+  font-size: .5em;
+  border-top: 1px solid black;
+  line-height: .5em;
+}
+
+.footer-comments{
+  float: bottom;
+  clear: both;
+  text-align: left;
+  font-size: .8em;
+  border-top: 1px solid black;
+}
+
+.footer-disclaimer{
+  float: bottom;
+  clear: both;
+  text-align: left;
+  font-size: 1em;
+  border-top: 1px solid black;
+}
+
+#heading {
+  font-weight: bold;
+  text-align: center;
+  line-height: 0em;
+  padding: 0px 0px 0px 0px;
+}
+
+h3 {
+  text-transform: uppercase;
+}
+
+h3 > span {
+  font-size: 2em;
+}
+
+li > span{
+  font-size: .5em;
+}
+
+li{
+  margin-bottom: 1.5em;
+}
+
+/* What is important to know when linking an external file (like a stylesheet) to an HTML file?
+When making websites, it's advantageous to create an external stylesheet and linking to it in your HTML files.
+You can link to your stylesheet in the <head> element of your HTML page, which contains information about the page, not information that a user will see.
+Under <head>, you use the <link> element with 3 attributes: href, which specifies the path to the CSS file, type, which specifies the type of document being linked to (should be text/css), and rel, which specifies the relationship between the HTML page and the file it's linked to (should be a stylesheet for CSS).
+You can use more than one stylesheet for your HTML files, perhaps for importing a particular font. The link element is "self-closing" which means it does not need a </link> closing tag, rather will just close with />.
+So, the element should look something like this inside your <head> element, apart from a different href:
+<link href="folder/to/stylesheet.css" type="text/css" rel="stylesheet"/>
+
+What tricks did you use to help you with positioning? How hard was it to get the site as you wanted it?
+I'm still having difficulty with positioning, but using Chrome DevTools helped me not waste too much time on experimenting.
+I struggled with getting the subtext for the links in place, but I ended up spending too much time trying to change this & wanted to not get into a CSS rabbit hole.
+I'm going to compare to the code of the original website and figure out what else is needed!
+
+What CSS did you use to modify the element style (like size, color, etc.)
+I used:
+Size for various fonts.
+Width, Clear & Float for positioning two columns.
+Color for font color and background color.
+Margin-bottom for spacing my list out more.
+Text-align for centering my header and geico section.
+Border-top and border-bottom to create a horizontal line break without </hr>.
+Padding to account for some spacing.
+Font-weight to bold some letters.
+Text-transform to capitalize some words.
+Top, Left & Right to position certain elements, namely the geico image.
+
+
+Did you modify the HTML to include classes or ids? If so, which did you choose and why?
+If you didn't, how would you know which one to add to your HTML?
+I did include classes and ids. I used classes to create the two columns of bulleted links, because I wanted all of the elements to recieve the same styling.
+I also used classes for the other text sections, because I wanted to position them together.
+I used an id for the Geico Image because it needed some separate positioning above the text it was associated with.
+I used an id for the Heading (Berkshire Hathaway Inc) because it also needed some separate sizing and span tags than the text underneath it would've needed.
+
+When you compared your site to the actual code base, which do you think had cleaner code that followed best practices and why?
+I thought the actual code base had cleaner code, but it used internal style tags, which is not best practice anymore.
+*/

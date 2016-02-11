@@ -1,6 +1,6 @@
 # Smallest Integer
 
-# I worked on this challenge [by myself, with: ].
+# I worked on this challenge by myself
 
 # smallest_integer is a method that takes an array of integers as its input
 # and returns the smallest integer in the array
@@ -11,16 +11,23 @@
 # If +list_of_nums+ is empty the method should return nil
 
 # Your Solution Below
-def smallest_integer(list_of_nums)
 
+#Array.new = [list_of_nums]
+
+def smallest_integer(list_of_nums)
+  if list_of_nums.length == 0
+    return nil
+  else
+    return list_of_nums.min
+  end
 end
-smallest_integer(1, 4, 6)
+
+
 
 =begin
 Pseudocode:
-Get integers as input
-If there is an array of integers, sort them low to high
-Return lowest integer
+Set Array as parameter
+If there is an array of integers, return lowest integer
 If it's an empty list, return nil
 
 =end

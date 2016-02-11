@@ -1,0 +1,33 @@
+header {
+  color: blue;
+  background-color: #e0e0eb;
+}
+
+.column-1 {
+  position: absolute;
+  width: 49%;
+  background-color: orange;
+}
+
+.column-2 {
+  position: absolute;
+  width: 49%;
+  background-color: #d0d0e1;
+  margin-left: 50%;
+}
+
+a{
+  text-decoration: none;
+}
+
+footer {
+  font-style: italic;
+  font-size: 1.15em;
+  background: purple;
+  position: absolute;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  top: 70em;
+  clear: both;
+  width: 100%;
+}

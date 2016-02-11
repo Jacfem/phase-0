@@ -1,6 +1,6 @@
 # Count Between
 
-# I worked on this challenge [by myself, with: ].
+# I worked on this challenge by myself.
 
 # count_between is a method with three arguments:
 #   1. An array of integers
@@ -15,5 +15,19 @@
 # Your Solution Below
 
 def count_between(list_of_integers, lower_bound, upper_bound)
-  # Your code goes here!
+  if list_of_integers == []
+    return 0
+  elsif upper_bound < lower_bound
+    return 0
+  elsif upper_bound == lower_bound
+    return list_of_integers.count
+  elsif (list_of_integers.max >= upper_bound) && (list_of_integers.min >= upper_bound)
+    return 0
+  elsif (list_of_integers.max <= upper_bound) && (list_of_integers.min >= lower_bound)
+    return list_of_integers.count
+  elsif (list_of_integers.max <= upper_bound) && (list_of_integers.min <= lower_bound)
+    return list_of_integers.count - 1
+  elsif (list_of_integers.max >= upper_bound)
+    return list_of_integers.count - 1
+  end
 end

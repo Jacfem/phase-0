@@ -23,7 +23,6 @@ If the array does not meet the minimum size, fill the default values into the ar
 
 =end
 # 1. Initial Solution
-
 def pad!(array, min_size, value = nil) #destructive
   if array.length >= min_size
     return array

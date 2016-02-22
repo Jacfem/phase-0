@@ -50,7 +50,7 @@ sample_array = (1..59).to_a
 acct_groups(sample_array)
 
 
-# REFACTORED SOLUTION:
+# FIRST REFACTORED SOLUTION:
 
 def acct_groups(array)
     new_array = []
@@ -65,6 +65,12 @@ def acct_groups(array)
       n += 1
   end
   p new_array
+end
+=end
+
+#SECOND REFACTORED SOLUTION
+def acct_groups(array)
+  array.shuffle.each_slice(5){|a| p a}
 end
 
 sample_array = (1..59).to_a
@@ -89,5 +95,5 @@ I stored the group in an array because there wasn't another unique value I neede
 What did you learn in the process of refactoring your initial solution? Did you learn any new Ruby methods?
 I couldn't find any more efficient ways of refactoring this solution if I were to maintain the strategy I took. I did find that
 I could've used a hash in order to store numbers of the groups.
-
+UPDATE: I found that shuffle and each_slice works great to shorten this code & randomizes the results each time! It also presents the output in a much cleaner manner.
 =end

@@ -32,7 +32,7 @@
 
 # Don't forget to check on initialization for a card length
 # of exactly 16 digits
-
+=begin
 class CreditCard
   attr_reader :ccnum
 
@@ -69,8 +69,42 @@ class CreditCard
   end
 
 end
-
+=end
 # Refactored Solution
+
+
+class CreditCard
+  attr_reader :ccnum
+
+  def initialize(ccnum)
+    @ccnum = ccnum.to_s.split('').map(&:to_i).reverse
+    raise ArgumentError.new("This credit card number is not 16 digits.") unless @ccnum.length == 16
+    end
+
+  def double_digit
+    digits = @ccnum.length
+    position = 1
+    while position.abs <= digits
+      @ccnum[position] = @ccnum[position] * 2
+      position += 2
+    end
+    #p ccnum
+  end
+
+  def check_card
+    double_digit
+    @ccnum = ccnum.to_s.split('').map(&:to_i)
+    #p ccnum
+    sum = 0
+    @ccnum.each { |num| sum += num }
+    #return sum
+    if sum % 10 == 0
+      return true
+    else
+      return false
+    end
+  end
+end #From Class
 
 
 # Reflection
@@ -79,7 +113,7 @@ What was the most difficult part of this challenge for you and your pair?
 The most difficult part of this challenge was figuring out how to properly split, double & add the separate integers.
 
 What new methods did you find to help you when you refactored?
-
+I found that using reverse on the credit card number in order to not traverse backward through the array's indexes felt cleaner, but it didn't necessarily change the functionality.
 
 What concepts or learnings were you able to solidify in this challenge?
 We didn't know we were able to call a method within another method. We ended up doing that with the separate double_digit method we wrote,

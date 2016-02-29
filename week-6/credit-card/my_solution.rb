@@ -77,31 +77,35 @@ class CreditCard
   attr_reader :ccnum
 
   def initialize(ccnum)
-    @ccnum = ccnum.to_s.split('').map(&:to_i).reverse
+    @ccnum = ccnum.to_s
     raise ArgumentError.new("This credit card number is not 16 digits.") unless @ccnum.length == 16
     end
 
-  def double_digit
-    digits = @ccnum.length
-    position = 1
-    while position.abs <= digits
-      @ccnum[position] = @ccnum[position] * 2
-      position += 2
-    end
-    #p ccnum
-  end
+  # def double_digit
+  #   digits = @ccnum.length
+  #   position = 1
+  #   while position.abs <= digits
+  #     @ccnum[position] = @ccnum[position] * 2
+  #     position += 2
+  #   end
+  #   #p ccnum
+  # end
 
   def check_card
-    double_digit
-    @ccnum = ccnum.to_s.split('').map(&:to_i)
-    #p ccnum
+    @ccnum = @ccnum.reverse!.split('').map!.with_index do |num, index|
+      if index.odd?
+        (num.to_i * 2).to_s
+      else
+        num
+      end
+    end
     sum = 0
-    @ccnum.each { |num| sum += num }
+    @ccnum.join.split('').each { |num| sum += num.to_i }
     #return sum
     if sum % 10 == 0
-      return true
+       true
     else
-      return false
+       false
     end
   end
 end #From Class

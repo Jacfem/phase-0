@@ -7,7 +7,7 @@
 var goodFriend = "You're the best! You deserve everything in the world!";
 console.log(goodFriend);
 
-//
+
 prompt("What's your favorite food?");
 alert("Hey! That's my favorite too!");
 
@@ -26,8 +26,20 @@ for (var number = 1; number < 101; number += 1)
 // Functions
 
 // Complete the `minimum` exercise.
+function minNumber (num1, num2) {
+  if (num1 < num2)
+    {return num1};
+  if (num2 < num1)
+    {return num2};
+};
 
-
+console.log(minNumber(10, 15));
 
 // Data Structures: Objects and Arrays
 // Create an object called "me" that stores your name, age, 3 favorite foods, and a quirk below.
+var me = {
+  name: "Jackie",
+  age: 24,
+  favoriteFoods: ["pizza", "avocado", "sandwiches"],
+  quirk: "I sleep too much."
+}

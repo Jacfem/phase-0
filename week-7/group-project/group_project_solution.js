@@ -69,5 +69,4 @@ var mean = function(array1){
 }
 
 The sum & median tests look great & had no errors!
-
 */

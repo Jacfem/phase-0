@@ -33,7 +33,6 @@ var median = function(array2){
 
 //median([2,4,3,1,5,6])
 
-
 // __________________________________________
 // Tests:  Do not alter code below this line.
 

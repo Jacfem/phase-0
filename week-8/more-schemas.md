@@ -1,10 +1,10 @@
-![One-to-One](../imgs/8.5_one-to-one.PNG)
+![One-to-One](https://github.com/Jacfem/phase-0/blob/master/week-8/imgs/8.5_one-to-one.png)
 
 This relationship is one-to-one because most people will only have one mailing address at one time. We can link the person id to both tables via a foreign key.
 In this example, the Person table is the parent table, and the Mailing Address is the child table. This is because we can have a person without a mailing address, but we can't have a mailing address without a person.
 
 
-![Many-to-Many](../imgs/8.5_grocery.PNG)
+![Many-to-Many](https://github.com/Jacfem/phase-0/blob/master/week-8/imgs/8.5_grocery.png)
 
 This relationship is many-to-many because there is no limit to the number of relationships that can be formed between these tables.
 

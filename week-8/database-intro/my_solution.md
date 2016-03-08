@@ -36,6 +36,11 @@ WHERE region_name LIKE '%Central';
 SELECT region_name, state_name FROM regions JOIN states ON states.region_id = regions.id
 ORDER BY region_id ASC;
 
+
+Release 6:
+
+![Clueless Schema](https://github.com/Jacfem/phase-0/blob/master/week-8/imgs/8.4schema_clueless.png)
+
 Reflection:
 
 What are databases for?

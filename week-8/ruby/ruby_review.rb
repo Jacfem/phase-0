@@ -8,7 +8,7 @@ Input: Number
 Output: Boolean value if it is a Fib. number
 
 # Initial Solution - Fibonacci Sequence
-=end
+
 def is_fibonacci?(num)
   random_fibonacci = [0, 1]
   i = 1
@@ -42,3 +42,70 @@ Sometimes I have a hard time deciding what type of looping to do, as in 'while' 
 
 What are you going to study to get more prepared for Phase 1?
 I'm going to do more work with hashes & arrays in Ruby, as well as work on solidifying past methods.
+
+
+
+_____________
+Reverse words
+Input: Sentence as a string
+Output: Reverses each word in the sentence
+
+Initial Solution:
+
+
+
+
+
+def reverse(sentence)
+  sentence.to_s.reverse
+end
+
+
+
+
+__________
+Assert Statements
+
+=end
+# def assert
+#   raise "Assertion failed!" unless yield
+# end
+#
+# name = "bettysue"
+# assert { name == "bettysue" }
+# assert { name == "billybob" }
+
+# 2. Pseudocode what happens when the code above runs
+# Above, we're defining a method named assert, that raises 'Assertion failed'
+# unless the method yields.
+
+
+
+# 3. Copy your selected challenge here
+
+
+=begin FizzBuzz
+Psuedocode:
+# This returns an array of the given `size` containing random powers of `base`
+# Since no power of 3 is ever a multiple of 5, this lets us create random arrays
+# that contain multiples of 3 and no multiples of 5
+Input: array
+Output: Array with:
+Elements multiple of 3 - 'Fizz'
+Elements multiple of 5 - 'Buzz'
+Elements multiple of 15 - 'FizzBuzz'
+=end
+
+def super_fizzbuzz(array)
+  array.map! {|i|
+    if (i % 15 == 0)
+        "FizzBuzz"
+    elsif (i % 3 == 0) && (i % 5 != 0)
+      "Fizz"
+    elsif (i % 5 == 0)
+      "Buzz"
+    else
+      i
+    end
+}
+end

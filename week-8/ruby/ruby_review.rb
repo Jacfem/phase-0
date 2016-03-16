@@ -154,27 +154,39 @@ We need: An array, flavors that will be in the array in a random order
 
 # Initial Solution
 =end
-# class PezDispenser
-#   attr_accessor :flavors
-#
-#
-#   def initialize(flavors)
-#     @flavors = ["cherry", "apple", "grape", "strawberry", "lemon", "lime"]
-#   end
-#
-#   def create
-#     @pez_array = @flavors.sample(10)
-#     puts "Your Pez Dispenser contains the following flavors: " + @pez_array.to_s
-#   end
-#
-#
-# # your code here!
-#
-# end
-#
-# pez_1 = PezDispenser.new
-# pez_1.create
+class PezDispenser
 
+  def initialize
+    @flavors = ["cherry", "apple", "grape", "strawberry", "lemon", "lime", "root beer"]
+  end
+
+  def create
+    @pez_array = @flavors.sample(5)
+  end
+
+  def count
+    @pez_array.length
+  end
+
+  def eat
+    @pez_array.shift
+  end
+
+  def add
+    @pez_array.push(@flavors.sample)
+  end
+
+  def view
+    puts @pez_array
+  end
+end
+
+pez_1 = PezDispenser.new
+pez_1.create
+pez_1.count
+pez_1.eat
+pez_1.add
+pez_1.view
 
 # Refactored Solution
 

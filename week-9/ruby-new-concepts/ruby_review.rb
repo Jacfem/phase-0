@@ -85,11 +85,11 @@ class Student
 
 def letter_grade
     case average
-    when 90..100 then letter = "A"
-    when 80..89 then letter = "B"
-    when 70..79 then letter = "C"
-    when 60..69 then letter = "D"
-      else letter = "F"
+    when 90..100 then "A"
+    when 80..89 then "B"
+    when 70..79 then "C"
+    when 60..69 then "D"
+      else "F"
     end
   end
 end # For class

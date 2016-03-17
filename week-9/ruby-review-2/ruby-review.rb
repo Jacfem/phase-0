@@ -125,7 +125,14 @@ p dr_evils_cipher("alc@qeoi*e$xvmppmsr^alir#ai*gsyph%qeoi...#fmppmsrw?")
 =begin Reflection
 
 What concepts did you review in this challenge?
-What is still confusing to you about Ruby?
-What are you going to study to get more prepared for Phase 1?
+We practiced manipulating data from one type to another in order to get it the way we could work with it.
+We went from a string, the message, to an array of all of the letters originally in that message,
+to a coded array of all of those changed letters, back to a string of the now encrypted message.
+We also practiced pushing to a new array, appending.
 
+What is still confusing to you about Ruby?
+We used a new method, .ord, which I need to review.
+
+What are you going to study to get more prepared for Phase 1?
+Manipulating data structures and changing them, which this challenge was helpful for.
 =end

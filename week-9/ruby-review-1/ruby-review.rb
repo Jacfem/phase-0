@@ -141,4 +141,16 @@ end #Class
 #                   ['x', 70, 54, 80, 83]]
 
 
-# Reflection
+=begin Reflection
+What concepts did you review in this challenge?
+Iterating over nested arrays.
+We used the method transpose, which flipped our rows to be columns, which was helpful for our column checker.
+We used some enumerable methods such as any and each_with_index, which was helpful for searching through our nested arrays.
+
+What is still confusing to you about Ruby?
+The enumerable methods sometimes don't jump out at me, so I'd like to read more about them.
+
+What are you going to study to get more prepared for Phase 1?
+Enumerable Methods & practicing iterating over nested data structures.
+
+=end

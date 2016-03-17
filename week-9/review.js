@@ -1,25 +1,26 @@
-/*
-Requirements:
-Create a new list
-Add an item with a quantity to the list
-Remove an item from the list
-Update quantities for items in your list
-Print the list (Consider how to make it look nice!)
 
-Pseudocode:
-Create a variable, grocery list
-Create a function for adding an item, removing an item,
-updating quantities, and printing the list.
+//Ruby to JavaScript - Calculate the Median
 
-*/
+//Pseudocode:
+//Input: An array
+//Output: The median of that array
+//Steps: Create a function that takes an array
+//  Sort the array
+//  Create a variable for the halfway mark of our array by rounding up for length/2 if array is odd length
+// If odd length, the median is the value at this halfway mark
+// If even length, the median is the value at this halfway mark + one behind the halfway mark, divided by 2
 
-var groceryList={
-  item1: 2,
-  item2: 3
+//Calculate the median
+var median = function(array){
+  array.sort();
+  var half = Math.floor(array.length/2)
+  if (array.length % 2 !== 0){ //if it's not even length
+  median = array[half];
+  }
+  else { // if it's even length
+    median = (array[half] + array[(half-1)])/2;
+  }
+  console.log(median);
 }
 
-var groceryList=
-  {add: function(item, quantity),
-    remove: function(item, quantity),
-    updateQuantities: function(),
-    print: function()}
+median([1,2,3,4,5,6,7])
